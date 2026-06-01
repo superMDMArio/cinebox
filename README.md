@@ -1,17 +1,7 @@
 # cinebox
 Documentação técnica, pesquisas e alternativas para receptores Cinebox após as mudanças de 2025. Inclui informações sobre downgrade de firmware, recuperação de funcionalidades removidas, atualização via USB, análise de firmware e preservação do controle do equipamento pelos seus proprietários.
 
-[01-APRESENTAÇÃO](01-APRESENTAÇÃO.md).
-
-[02-COMEÇO](02-COMEÇO.md).
-
-[03-ANALISE](03-ANALISE.md).
-
-[04-DOWNGRADE](04-DOWNGRADE.md).
-
-[05-QRCODE](05-QRCODE.md).
-
-# 01-APRESENTAÇÃO
+# Apresentação
 ### Cinebox
 
 Este repositório foi criado para documentar informações técnicas, pesquisas, métodos de análise e alternativas relacionadas aos receptores Cinebox após as alterações implementadas no final de 2025.
@@ -26,7 +16,7 @@ Além disso, serão abordadas alternativas para utilização das versões mais r
 
 Este projeto tem caráter educacional e de pesquisa, com foco na documentação, transparência, preservação de funcionalidades e liberdade de escolha dos usuários sobre equipamentos que adquiriram legalmente.
 
-# 02-COMEÇO
+# Começo
 ### Informações Básicas
 
 Antes de iniciar qualquer procedimento, existem algumas informações úteis que podem ser obtidas diretamente do receptor através da interface web interna.
@@ -55,7 +45,7 @@ O resultado contém diversas informações de diagnóstico e pode revelar endere
 
 Importante: essas informações podem ser úteis para análise da comunicação de rede do receptor e para identificar servidores utilizados durante processos de atualização e recuperação de firmware.
 
-# 03-ANALISE
+# Análise
 ### Extraindo uma firmware Cinebox com Binwalk
 
 Partindo do princípio que você já possui o Binwalk instalado.
@@ -109,7 +99,7 @@ Daqui para frente é basicamente exploração e curiosidade. Quanto mais você p
 
 Aqui começa a diversão.
 
-# 04-DOWNGRADE
+# Downgrade
 ### Guia de Interceptação de Atualizações via Servidor Local
 
 Este procedimento demonstra como redirecionar as requisições de atualização de um receptor para um servidor HTTP hospedado localmente em um Mac, permitindo fornecer arquivos personalizados de firmware e listas de canais.
@@ -250,7 +240,7 @@ O servidor Python integrado ao macOS é suficiente para testes e desenvolvimento
 Sempre mantenha cópias de segurança dos firmwares originais antes de qualquer procedimento.
 Verifique a integridade dos arquivos utilizando os hashes MD5 informados pelo equipamento.
 
-# 05-QRCODE
+# Qr-Code
 ### Bypassing de Validação de Firmware via Bloqueio NTP e Telemetria
 
 Este guia demonstra como explorar uma falha de validação temporal em firmwares específicos de receptores para manter o acesso aos serviços On Demand de forma gratuita.
