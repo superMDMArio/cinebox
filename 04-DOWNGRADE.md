@@ -2,7 +2,7 @@
 
 Este procedimento demonstra como redirecionar as requisições de atualização de um receptor para um servidor HTTP hospedado localmente em um Mac, permitindo fornecer arquivos personalizados de firmware e listas de canais.
 
-## 1. Identificando a Interface de Rede Correta no macOS (SE VC USA OUTRO SISTEMA PROCURE)
+### 1. Identificando a Interface de Rede Correta no macOS (SE VC USA OUTRO SISTEMA PROCURE)
 
 Antes de iniciar, é necessário descobrir qual interface de rede está conectada à mesma rede do receptor.
 
@@ -31,13 +31,13 @@ Exemplo de resultado:
 ```
 Esse endereço será utilizado posteriormente como gateway do receptor.
 
-## 2. Criando a Estrutura de Diretórios (NESSE CASO PARA UM FANTASIA PLUS)
+### 2. Criando a Estrutura de Diretórios (NESSE CASO PARA UM FANTASIA PLUS)
 
 Crie a estrutura de pastas esperada pelo equipamento:
 ```terminal
 mkdir -p ~/Sites/AllNewVOD/UPDATE_PLUS/Fantasia
 ```
-## 3. Criando o Arquivo de Atualização
+### 3. Criando o Arquivo de Atualização
 
 Crie o arquivo:
 ```terminal
@@ -64,7 +64,7 @@ Sites/
             ├── UpdateList.txt
             ├── 20240523_1_fantasia_plus.abs
 ```
-## 4. Iniciando o Servidor HTTP
+### 4. Iniciando o Servidor HTTP
 
 Acesse o diretório raiz:
 ```terminal
@@ -76,7 +76,7 @@ sudo python3 -m http.server 80
 ```
 Mantenha esta janela aberta durante todo o processo.
 
-## 5. Clonando o Endereço IP do Servidor Remoto
+### 5. Clonando o Endereço IP do Servidor Remoto
 
 Abra uma nova aba do Terminal e adicione um endereço IP secundário à interface de rede:
 ```terminal
@@ -86,7 +86,7 @@ Substitua en0 pela interface identificada anteriormente, caso seja diferente.
 
 Após esse comando, o Mac responderá localmente pelas requisições destinadas ao endereço IP especificado.
 
-## 6. Configurando a Rede do Receptor
+### 6. Configurando a Rede do Receptor
 
 Configure manualmente os parâmetros de rede do aparelho cinebox:
 ```
@@ -105,7 +105,7 @@ DNS:      8.8.8.8
 ```
 O gateway deve ser o endereço IP real do Mac obtido anteriormente.
 
-## 7. Executando a Atualização
+### 7. Executando a Atualização
 
 Com o servidor ativo e a rede configurada:
 
@@ -114,7 +114,7 @@ Solicite a leitura da lista de atualizações.
 Verifique no terminal se as requisições HTTP estão sendo recebidas.
 Se tudo estiver correto, o equipamento deverá baixar os arquivos disponibilizados pelo servidor local. (PODE DEMORAR UM POUCO)
 
-## 8. Limpeza e Restauração
+### 8. Limpeza e Restauração
 
 Após concluir o procedimento:
 
@@ -132,7 +132,7 @@ DHCP / Automático
 ```
 Isso restaura o funcionamento normal da rede.
 
-## Observações
+### Observações
 O IP utilizado no exemplo (IP_QUE_VAI_ENCONTRAR_NO_BINWALK) pode variar conforme a versão do equipamento e os servidores consultados.
 O servidor Python integrado ao macOS é suficiente para testes e desenvolvimento.
 Sempre mantenha cópias de segurança dos firmwares originais antes de qualquer procedimento.
