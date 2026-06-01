@@ -1,4 +1,4 @@
-Cinebox
+# Cinebox
 
 Este repositório foi criado para documentar informações técnicas, pesquisas, métodos de análise e alternativas relacionadas aos receptores Cinebox após as alterações implementadas no final de 2025.
 
