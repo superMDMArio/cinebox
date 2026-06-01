@@ -3,13 +3,13 @@
 Partindo do princípio que você já possui o Binwalk instalado.
 
 Abra o Terminal do macOS e entre na pasta onde costuma trabalhar com o Binwalk:
-
+```terminal
 cd binwalk
-
+```
 Agora execute a extração da firmware:
-
+```terminal
 binwalk -e 20260501_cinebox_p_normal.abs
-
+```
 Você não precisa digitar o caminho completo manualmente. Basta escrever:
 
 binwalk -e
