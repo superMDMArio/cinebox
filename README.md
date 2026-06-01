@@ -6,3 +6,5 @@ Documentação técnica, pesquisas e alternativas para receptores Cinebox após 
 [02-COMEÇO](02-COMEÇO.md).
 
 [03-ANALISE](03-ANALISE.md).
+
+[04-DOWNGRADE](04-DOWNGRADE.md).
