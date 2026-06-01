@@ -276,7 +276,7 @@ iptables -I FORWARD -s IP_DO_SEU_CINEBOX -p tcp --dport 5002 -j DROP
 Após inserir os comandos no modem, você pode certificar-se de que o tráfego está sendo devidamente interceptado rodando o seguinte comando:
 ```ssh
 Bash
-iptables -L -n -v | grep IP_DO_SEU_MODEM
+iptables -L -n -v | grep IP_DO_SEU_CINEBOX
 ```
 Certifique-se de que as regras apareçam na lista com o status de DROP para o IP do seu aparelho.
 
