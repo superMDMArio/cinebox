@@ -9,7 +9,13 @@ A senha de proteção do menu pode ser consultada acessando a seguinte URL no na
 http://IP_DO_SEU_CINEBOX:9981/check_access
 ```
 O retorno da página exibirá informações relacionadas ao controle de acesso do equipamento.
-
+```
+{
+ "result": 0,
+ "message": "Connected!",
+ "password": 0000
+}
+```
 ### Listar os serviços OnDemand conectados ao equipamento
 
 Para visualizar os serviços e servidores atualmente utilizados pelo receptor, execute o seguinte comando em um terminal:
