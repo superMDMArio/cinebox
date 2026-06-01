@@ -144,7 +144,7 @@ Crie o arquivo:
 ```terminal
 ~/Sites/AllNewVOD/UPDATE_PLUS/Fantasia/UpdateList.txt
 ```
-Conteúdo de exemplo: (USAR BINWALK NA SUA FIRMWARE PARA DESCOBRIR O SEU CAMINHO)
+Conteúdo de exemplo: **(USAR BINWALK NA SUA FIRMWARE PARA DESCOBRIR O SEU CAMINHO)**
 ```
 W_TYPE:1
 W_TITLE:FIRMWARE V1.2(24.05.23)
@@ -152,7 +152,7 @@ W_URL:http://IP_QUE_VAI_ENCONTRAR_NO_BINWALK/AllNewVOD/UPDATE_PLUS/Fantasia/2024
 W_IMG:http://IP_QUE_VAI_ENCONTRAR_NO_BINWALK/AllNewVOD/UPDATE_PLUS/Fantasia/cinebox_plus.jpg
 W_MD5:b95b41ba1ec4fda84edb57df58f877b1
 ```
-Coloque também o arquivo de firmware correspondente na mesma pasta: (CADA FIRMWARE TEM SEU MD5, VAI PRECISAR DESCOBRIR)
+Coloque também o arquivo de firmware correspondente na mesma pasta: **(CADA FIRMWARE TEM SEU MD5, VAI PRECISAR DESCOBRIR)**
 ```
 ~/Sites/AllNewVOD/UPDATE_PLUS/Fantasia/
 ```
@@ -192,9 +192,9 @@ Após esse comando, o Mac responderá localmente pelas requisições destinadas 
 Configure manualmente os parâmetros de rede do aparelho cinebox:
 ```
 Configuração	Valor
-IP	192.168.15.2
+IP	IP_DO_SEU_CINEBOX
 Máscara	255.255.255.0
-Gateway	IP do Mac
+Gateway	IP_DO_SEU_SERVER
 DNS	8.8.8.8
 ```
 Exemplo:
@@ -213,7 +213,7 @@ Com o servidor ativo e a rede configurada:
 Acesse o menu de atualização do receptor.
 Solicite a leitura da lista de atualizações.
 Verifique no terminal se as requisições HTTP estão sendo recebidas.
-Se tudo estiver correto, o equipamento deverá baixar os arquivos disponibilizados pelo servidor local. (PODE DEMORAR UM POUCO)
+Se tudo estiver correto, o equipamento deverá baixar os arquivos disponibilizados pelo servidor local. **(PODE DEMORAR UM POUCO)**
 
 ### 8. Limpeza e Restauração
 
@@ -234,7 +234,7 @@ DHCP / Automático
 Isso restaura o funcionamento normal da rede.
 
 ### Observações
-O IP utilizado no exemplo (IP_QUE_VAI_ENCONTRAR_NO_BINWALK) pode variar conforme a versão do equipamento e os servidores consultados.
+O IP utilizado no exemplo **(IP_QUE_VAI_ENCONTRAR_NO_BINWALK)** pode variar conforme a versão do equipamento e os servidores consultados.
 O servidor Python integrado ao macOS é suficiente para testes e desenvolvimento.
 Sempre mantenha cópias de segurança dos firmwares originais antes de qualquer procedimento.
 Verifique a integridade dos arquivos utilizando os hashes MD5 informados pelo equipamento.
@@ -291,4 +291,4 @@ Conexão de Rede: Conecte o aparelho à sua rede local (via Wi-Fi ou cabo de red
 
 Pronto: O aparelho terá acesso à internet para carregar as mídias, mas não conseguirá atualizar o relógio nem validar a telemetria, mantendo o serviço On Demand liberado.
 
-Obs: Não é possível utilizar o serviço de satélite pois o mesmo atualiza a data e horário do equipamento.
+**Obs: Não é possível utilizar o serviço de satélite pois o mesmo atualiza a data e horário do equipamento.**
