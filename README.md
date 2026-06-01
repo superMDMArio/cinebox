@@ -8,3 +8,5 @@ Documentação técnica, pesquisas e alternativas para receptores Cinebox após 
 [03-ANALISE](03-ANALISE.md).
 
 [04-DOWNGRADE](04-DOWNGRADE.md).
+
+[05-QRCODE](05-QRCODE.md).
